@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffcc00;
+    color: #000;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes fade-in {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffcc00;
+  }
+  
+  section {
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffcc00;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ffa500;
+  }
+  
+  .about-me p {
+    font-size: 18px;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #fff;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .projects h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .project-item {
+    margin-bottom: 40px;
+    animation: zoom-in 0.8s ease-in-out;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-item img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  .project-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffcc00;
+  }
+  
+  .project-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  .testimonial {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .testimonial h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .testimonial-item {
+    max-width: 400px;
+    margin: 0 20px;
+    text-align: center;
+    opacity: 0;
+    animation: slide-up 1s ease-in-out forwards;
+    transition: transform 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .testimonial-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color:white;
+  }
+  
+  .testimonial-item h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ffcc00;
+  }
+  
+  .contact {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .contact form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact form input,
+  .contact form textarea {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .contact form input[type="submit"] {
+    background: #ffcc00;
+    color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact form input[type="submit"]:hover {
+    background: #ffa500;
+  }
+   
+
+  /* servicess section starts here */
+/* Existing CSS code */
+
+/* Existing CSS code */
+
+.services {
+    text-align: center;
+    padding: 100px 0;
+  }
+  
+  .services h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .service-item {
+    display: inline-block;
+    margin: 20px;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .service-item:hover {
+    opacity: 1.1;
+    transform: scale(1.1);
+  }
+  
+  .service-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .service-item h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .service-item p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+  /* Rest of the CSS code */
+  
